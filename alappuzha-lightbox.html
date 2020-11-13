@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerala Tourism</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="img/logopng.png">
+  <style>
+    .column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  </style>
+</head>
+
+<body>
+  <header class="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark floatRight">
+      <a class="navbar-brand" href="index.html"><img class="logo" src="img/logopng.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse floatRight" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="signUp.html">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signIn.html">Sign In</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="districts.html">Districts</a>
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <section id="main-heading" class="text-center bg-primary signup">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 py-3 mb-0">
+          <h1> alappuzha </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="main-content" class="py-5">
+    <div class="container">
+      <div class="row distict text-center">
+        <div class="col-md-8 offset-md-2 mb-3">
+          <div class=" mb-3">
+            <img class="img-fluid" src="img/all-districts/ernakulam/ernamkulam-main.png" alt="Eranakulam">
+          </div>
+          <h2>About alappuzha</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium recusandae provident numquam natus,
+            maxime beatae neque delectus magnam obcaecati nulla eaque ab facere amet in perferendis inventore adipisci
+            vitae ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium recusandae provident numquam natus,
+            maxime beatae neque delectus magnam obcaecati nulla eaque ab facere amet in perferendis inventore adipisci
+            vitae ullam?</p>
+        </div>
+      </div>
+      <h3>Important place to visit</h3>
+      <div class="row text-center">
+        <div class="col-md-3 places py-3">
+          <img class="img-fluid" src="img/all-districts/ernakulam/ernamkulam-main.png" alt="Eranakulam">
+          <h4>place One</h4>
+        </div>
+        <div class="col-md-3 places py-3">
+          <img class="img-fluid" src="img/all-districts/ernakulam/ernamkulam-main.png" alt="Eranakulam">
+          <h4>place two</h4>
+        </div>
+        <div class="col-md-3 places py-3">
+          <img class="img-fluid" src="img/all-districts/ernakulam/ernamkulam-main.png" alt="Eranakulam">
+          <h4>place three</h4>
+        </div>
+        <div class="col-md-3 places py-3">
+          <img class="img-fluid" src="img/all-districts/ernakulam/ernamkulam-main.png" alt="Eranakulam">
+          <h4>place four</h4>
+        </div>
+      </div>
+
+      <!-- new light box -->
+      <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="img/all-districts/ernakulam/ernamkulam-main.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/all-districts/ernakulam/ernamkulam-main.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/all-districts/ernakulam/ernamkulam-main.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/all-districts/ernakulam/ernamkulam-main.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/all-districts/ernakulam/ernamkulam-main.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img/all-districts/ernakulam/ernamkulam-main.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/all-districts/ernakulam/ernamkulam-main.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img/all-districts/ernakulam/ernamkulam-main.png" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="img/all-districts/ernakulam/ernamkulam-main.png" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/all-districts/ernakulam/ernamkulam-main.png" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/all-districts/ernakulam/ernamkulam-main.png" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/all-districts/ernakulam/ernamkulam-main.png" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>
+      <!-- new light box END-->
+      
+
+      <div class="row my-5 DistrictBtn">
+        <div class="col-md-3 offset-md-1">
+          <a href="#" class="btn btn-secondary btn-md btn-block" role="button" >Prev </a>
+        </div>
+        <div class="col-md-4 ">
+          <a href="districts.html" class="btn btn-primary btn-md btn-block" role="button" >All Districts </a>
+        </div>
+        <div class="col-md-3 ">
+          <a href="#" class="btn btn-secondary btn-md btn-block" role="button" >next  </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="py-3 text-center" style="margin-bottom:0">
+      <a href="#">Copyright &copy; 2020 Kerala Tourism. All rights reserved. </a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script>
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+      
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+</body>
+
+</html>

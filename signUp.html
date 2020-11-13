@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Kerala Tourism</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/logopng.png">
+</head>
+
+<body>
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="img/logopng.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto"><!-- ml-auto for floating right  -->
+                    
+                    <li class="nav-item active">
+                        <a class="nav-link" href="signUp.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signIn.html">Sign In</a>
+                    </li>
+
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+    <section id="main-heading" class="text-center bg-primary signup">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 py-3 mb-0">
+                    <h1> Sign Up</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="main-content">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-4 offset-md-4 text-center alert ">
+                    Create your account with genuine information. <br>
+                    If you are already a member, please  <a href="signIn.html">Sign-In</a>  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <form class="mb-5" action="signIn.html" onsubmit="return validate()">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <label for="errorfirstname" id="errorfirstname"></label>
+                            <input type="text" class="form-control" id="firstname">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" id="lastname">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <label for="errorphonenumber" id="errorphonenumber"></label>
+                            <input type="text" class="form-control" id="phonenumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <label for="erroremail" id="erroremail"></label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <label for="strengthpasswordtext" id="strengthpasswordtext"></label>
+                            <!-- <meter id="strengthpassword" value="" min="0" max="3"></meter>   -->
+                            <meter  id="strengthpassword" value = "" min="0" low="6" high="11" max="15" optimum="15"></meter>                          
+                            <label for="errorpassword" id="errorpassword"></label>
+                            <input type="password" class="form-control" id="password">
+                            <small id="passwordHelpBlock" class="form-text text-muted">
+                                Your password must be minimum 8 characters long, contain at least one lower case and upper case letters and must contain atleast one number.
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRe">Repeat Password</label>
+                            <label for="errorpasswordRe" id="errorpasswordRe"></label>
+                            <input type="password" class="form-control" id="passwordRe">
+                        </div>
+                        <div class="form-group form-check">
+                            <label for="errorcheckbox" id="errorcheckbox"></label><br>
+                            <input type="checkbox" class="form-check-input" id="check1">
+                            <label class="form-check-label" for="check1">Agree our <a href="#" target="_blank" rel="noopener noreferrer">Terms and Policy</a></label>
+                        </div>
+                        <button class="btn btn-success btn-block btnsubmit">Sign Up</button>
+                        <!-- <a href="signIn.html" class="btn btn-success btn-block"> Submit </a> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+    </div> -->
+    </section>
+    <footer>
+        <div class="py-3 text-center" style="margin-bottom:0">
+            <a href="#">Copyright &copy; 2020 Kerala Tourism. All rights reserved. </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="signup.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script> -->
+        
+</body>
+
+</html>
